@@ -1,14 +1,17 @@
 import java.util.Scanner;
-public class Main {
+public class Main 
+{
 	int x;
 	int y;
 	int r;
 	
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		Scanner in = new Scanner(System.in);
 		
 		System.out.println("Calculate the area of rectangle or a circle (r,c)");
 		String init = in.nextLine();
+		
 		if (init.equals("r"))
 		{
 			System.out.println("Width?");
