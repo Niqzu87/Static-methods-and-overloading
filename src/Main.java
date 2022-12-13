@@ -17,28 +17,28 @@ public class Main {
 			System.out.println("Height?");
 			input = in.nextLine();
 			int y = Integer.parseInt(input);
-			laskuri.laskePintaAla(x,y);
+			calculator.calculate(x,y);
 		}
 		if (init.equals("c"))
 		{
 			System.out.println("Radius?");
 			String input = in.nextLine();
 			int r = Integer.parseInt(input);
-			laskuri.laskePintaAla(r);
+			calculator.calculate(r);
 		}
 		in.close();
 		
 	} // main end
 
-} // main claas end
+} // main class end
 
-class laskuri
+class calculator
 {
-	static void laskePintaAla(int x, int y) //nelikulmion pinta-alan laskenta
+	static void calculate(int x, int y) //calculate area of square
 	{
 		System.out.println(x*y);
 	}
-	static void laskePintaAla(int r) // ympyrän pinta-alan laskenta säteen perusteella
+	static void calculate(int r) // calculate area of circle with radius
 	{
 		System.out.printf("%.2f",r*r*Math.PI);
 	}
